@@ -40,7 +40,7 @@ const LogIn = () => {
       </div>
 
 
-      <div className="w-full lg:w-1/2 h-3/4 flex flex-col  h-1.5  p-20 items-center justify-center ">
+      <div className="w-full lg:w-1/2  flex flex-col  h-1.5  p-20 items-center justify-center ">
         <form className="w-full max-w-md my-2.5 flex flex-col items-center" onSubmit={handleLogin}  >
           <h1 className=' font-mono text-3xl text-blue-500 font-extrabold my-5'>Login</h1>
           <input value={email} onChange={(e) => { setEmail(e.target.value) }} className='border-blue-400 outline-none  focus:border-blue-600 border-2 rounded-[5px] my-2.5 w-full h-10 px-2' type="email" placeholder='Email' required />
