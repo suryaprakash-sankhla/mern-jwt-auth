@@ -45,7 +45,7 @@ const LogIn = () => {
           <h1 className=' font-mono text-3xl text-blue-500 font-extrabold my-5'>Login</h1>
           <input value={email} onChange={(e) => { setEmail(e.target.value) }} className='border-blue-400 outline-none  focus:border-blue-600 border-2 rounded-[5px] my-2.5 w-full h-10 px-2' type="email" placeholder='Email' required />
           <input value={password} onChange={(e) => { setPassword(e.target.value) }} className='border-blue-400 outline-none  focus:border-blue-600 border-2 rounded-[5px] my-2.5 w-full h-10 px-2' type="password" placeholder='Password' required />
-          <button className='bg-blue-700 text-white text-[18px] rounded-[5px] my-2.5 w-full h-10 px-2 ' type='submit' required>Sign Up</button>
+          <button className='bg-blue-700 text-white text-[18px] rounded-[5px] my-2.5 w-full h-10 px-2 ' type='submit' required>Login</button>
           <p onClick={() => { navigate("/signup"); }} className='cursor-pointer text-gray-400 font-bold'>Don't have an account? <span className='text-blue-400'>SignUp here</span></p>
 
         </form>
