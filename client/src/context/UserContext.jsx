@@ -10,7 +10,7 @@ const UserContext = ({ children }) => {
 
     const [userData, setUserData] = useState()
 
-    const serverUrl="http://localhost:8000" 
+    const serverUrl="https://mern-jwt-auth-0spg.onrender.com" 
 
     const getUserData = async () => {
         try {
