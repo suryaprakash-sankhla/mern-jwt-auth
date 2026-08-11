@@ -1,33 +1,38 @@
 # 🔐 MERN Authentication System
 
-A full-stack authentication application built with the **MERN stack**, implementing user authentication, protected routes, profile management, and cloud-based image uploads.
+A full-stack authentication application built with the **MERN stack**, featuring secure JWT authentication, protected routes, profile management, and cloud-based image uploads.
+
+---
 
 ## 🚀 Live Demo
 
-👉 **[View Live Demo](YOUR_LIVE_LINK)**
+**Frontend:** https://mern-jwt-auth-sp.vercel.app
 
-## 📸 Preview
+**Backend API:** https://mern-jwt-auth-0spg.onrender.com
 
-
+---
 
 ## ✨ Features
 
-- 🔑 User Signup & Login
+- 🔑 User Registration & Login
 - 🔒 JWT Authentication with HTTP-only Cookies
-- 🛡️ Protected Backend Routes
+- 🛡️ Protected Routes & Middleware
 - 👤 User Profile Management
 - 🖼️ Profile Image Upload
 - ☁️ Cloudinary Image Storage
-- 🔐 Password Hashing with bcrypt
+- 🔐 Password Hashing with bcryptjs
 - 🚪 Secure Logout
-- 🗄️ MongoDB Database
-- ⚡ REST API Integration
-- 🔄 React Context API for User State
-- 📱 Responsive UI
+- 🗄️ MongoDB Atlas Integration
+- ⚡ REST API Architecture
+- 🔄 Global User State using React Context API
+- 📱 Fully Responsive User Interface
+
+---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React
 - Vite
 - Tailwind CSS
@@ -36,94 +41,120 @@ A full-stack authentication application built with the **MERN stack**, implement
 - Context API
 
 ### Backend
+
 - Node.js
 - Express.js
-- MongoDB
+- MongoDB Atlas
 - Mongoose
 
 ### Authentication & Storage
-- JWT
+
+- JWT (JSON Web Tokens)
 - HTTP-only Cookies
 - bcryptjs
 - Multer
 - Cloudinary
 
+---
+
 ## 🔄 Application Flow
 
-```
+```text
 React Frontend
-      ↓
+      │
+      ▼
 Axios Request
-      ↓
+      │
+      ▼
 Express REST API
-      ↓
+      │
+      ▼
 Authentication Middleware
-      ↓
-MongoDB / Mongoose
-      ↓
+      │
+      ▼
+MongoDB Atlas
+      │
+      ▼
 Cloudinary
-      ↓
+      │
+      ▼
 Response
-      ↓
-React State
+      │
+      ▼
+React Context API
 ```
 
-## 🧠 What I Practiced
+---
 
-Built the complete authentication flow from **React → REST API → Express → MongoDB**, including:
+## 🧠 What I Learned
 
-- User registration and login
-- Password hashing
-- JWT token generation
+Throughout this project, I practiced:
+
+- Implementing complete user authentication
+- Password hashing with bcryptjs
+- JWT token generation and verification
 - HTTP-only cookie authentication
-- Protected API routes
-- Authentication middleware
-- User state management with Context API
-- Profile image uploads using Multer
-- Cloudinary image storage
-- Frontend/backend integration
-- Error handling and API debugging
+- Building protected API routes
+- Creating reusable Express middleware
+- Managing global authentication state with Context API
+- Uploading profile images using Multer
+- Storing images securely with Cloudinary
+- Integrating React with Express REST APIs
+- Connecting MongoDB using Mongoose
+- Handling errors and debugging API requests
+- Deploying a full-stack MERN application to production
+
+---
 
 ## 📂 Project Structure
 
-```
+```text
 client/
-  ├── components/
-  ├── pages/
-  ├── context/
-  └── assets/
+├── assets/
+├── components/
+├── context/
+├── pages/
+└── App.jsx
 
 server/
-  ├── config/
-  ├── controllers/
-  ├── middlewares/
-  ├── models/
-  ├── routes/
-  └── server.js
+├── config/
+├── controllers/
+├── middlewares/
+├── models/
+├── routes/
+├── src/
+└── package.json
 ```
+
+---
 
 ## ⚙️ Environment Variables
 
-Create a `.env` file in the backend directory:
+Create a `.env` file inside the **server** directory.
 
 ```env
 MONGODB_URL=
+
 JWT_SECRET=
+
+CLIENT_URL=
 
 CLOUDINARY_CLOUD_NAME=
 CLOUDINARY_API_KEY=
 CLOUDINARY_API_SECRET=
 ```
 
+---
+
 ## 🚀 Getting Started
 
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/suryaprakash-sankhla/mern-jwt-auth.git
 ```
 
-### Install Frontend Dependencies
+Install frontend dependencies:
 
 ```bash
 cd client
@@ -131,7 +162,7 @@ npm install
 npm run dev
 ```
 
-### Install Backend Dependencies
+Install backend dependencies:
 
 ```bash
 cd server
@@ -139,8 +170,16 @@ npm install
 npm run dev
 ```
 
+---
+
 ## 🎯 Purpose
 
-This project was built to strengthen my understanding of **full-stack authentication and MERN application architecture** through hands-on implementation.
+This project was built to strengthen my understanding of **full-stack authentication** and modern **MERN application architecture** through hands-on implementation.
 
-It represents my transition from building frontend interfaces to developing complete applications with **React, REST APIs, authentication, databases, middleware, and cloud services**.
+It represents my transition from building frontend interfaces to developing complete applications involving **authentication, REST APIs, databases, middleware, secure cookies, cloud storage, and production deployment**.
+
+---
+
+## 📄 License
+
+This project is created for learning and portfolio purposes.
