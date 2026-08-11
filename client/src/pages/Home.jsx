@@ -15,7 +15,6 @@ const Home = () => {
   },[userData]);
 
   const handleLogout = async()=>{
-    console.log("clicked!!")
     try {
          let data = await axios.post(serverUrl +"/api/logout",{},{
             withCredentials:true,
